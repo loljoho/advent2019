@@ -4,13 +4,18 @@ const { createInterface } = require('readline');
 const BASE_PATH = `src/day1/`;
 
 /**
- * Get the amount of fuel required to launch a given module
+ * Get fuel requirement for module or fueld
  *
  * @param {number} mass   Module mass from which to calculate fuel requirement
  * @return {number}
  */
 let getFuelReq = (mass) => {
-  return Math.floor(mass / 3) - 2;
+  let fuel = Math.floor(mass / 3) - 2;
+  if (fuel <= 0) {
+    return 0;
+  } else {
+    return fuel + getFuelReq(fuel);
+  }
 };
 
 /**
