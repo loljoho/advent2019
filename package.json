@@ -1,0 +1,25 @@
+{
+  "name": "advent2019",
+  "version": "1.0.0",
+  "description": "Advent of Code 2019 in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loljoho/advent2019.git"
+  },
+  "author": "Jonathan Ho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loljoho/advent2019/issues"
+  },
+  "homepage": "https://github.com/loljoho/advent2019#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1"
+  }
+}
